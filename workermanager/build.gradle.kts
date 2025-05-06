@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.alexsandrovaa.thread"
+    namespace = "ru.mirea.alexsandrovaa.workermanager"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ru.mirea.alexsandrovaa.thread"
+        applicationId = "ru.mirea.alexsandrovaa.workermanager"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("androidx.work:work-runtime:2.9.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
